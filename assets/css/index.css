@@ -115,23 +115,43 @@
     text-align: center;
     margin: auto;
     padding: 24px;
+   
 
 }
 
 .title {
     font-size: 2rem;
     font-weight: 500;
+    margin-bottom: 48px;
+}
+
+.subscription {
+    position: relative;
+    /* background: url(../images/background-movies-series.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:38% 0%;
 }
 
 .subscription__plans {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color --btn;
+    gap: 46px;
+    
+
 }
 
 .subscription__card {
     padding: 40px;
+    background:var(--card-bg-color) ;
+    border-radius: 8px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
 
 }
 
@@ -182,6 +202,8 @@
     text-transform: uppercase;
     color: #fff;
     margin: 1px;
+    text-decoration: none;
+    border: none;
 
 }
 
