@@ -1,7 +1,7 @@
 @import url("./global.css");
 
 .header {
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
     padding: 10px 0 300px;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
@@ -237,6 +237,11 @@
 }
 
 
+    @media screen and (max-width:480px){
+        .header{
+            margin-top: 128px !important;
+   }
+    }
 
 
 
