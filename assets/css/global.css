@@ -191,7 +191,10 @@
     margin-top: 80px;
   }
 
-
+  a:focus-visible,button:focus-visible{
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 4px;
+  }
 
   @media screen and (min-width:481px) {
 
