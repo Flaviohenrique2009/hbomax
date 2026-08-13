@@ -134,13 +134,13 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin:40px 0;
+    margin: 40px 0;
 
 
 }
 
 .subscription__card {
-    width:100%;
+    width: 100%;
     max-width: 600px;
     min-height: 600px;
     padding: 40px;
@@ -240,13 +240,21 @@
 }
 
 
-    @media screen and (max-width:480px){
-        .header{
-            margin-top: 128px !important;
-   }
+@media screen and (max-width:480px) {
+    .header {
+        margin-top: 128px !important;
     }
+}
 
-
+@media screen and (min-width:481px) {
+    .contents__container{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-flow: row;
+        gap:32px;
+        overflow: visible;
+    }
+    
+}
 
 /* .header__button{ */
 /* animation-duration: 2.2s ;
