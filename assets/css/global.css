@@ -79,9 +79,9 @@
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-right:24px;
+    margin-right: 24px;
     text-transform: uppercase;
-   
+
   }
 
   .menu>div {
@@ -113,13 +113,13 @@
 
 
 
-  .button {
+  /* .button {
     background-color: var(--tertiary-color);
     border-radius: 100px;
     padding: 8px 20px;
 
 
-  }
+  } */
 
   .header {
     background-color: white;
@@ -134,7 +134,8 @@
     background-color: var(--tertiary-color);
     cursor: pointer;
     text-decoration: none;
-
+    border-radius: 100px;
+    padding: 8px 20px;
 
 
   }
