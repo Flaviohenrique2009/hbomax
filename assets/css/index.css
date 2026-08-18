@@ -107,7 +107,7 @@
 }
 
 .container {
-    width: min(100%-48px,1200px);
+    width: min(100%-48px, 1200px);
     margin-inline: auto;
     text-align: center;
     margin: auto;
@@ -124,7 +124,6 @@
 
 .subscription {
     position: relative;
-    /* background: url(../images/background-movies-series.png); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 38% 0%;
@@ -264,22 +263,22 @@
     background-image: url(../images/MAX-Hover.webp);
 }
 
-.contents__card:nth-child(3):hover{
-    background-image:url(../images/DC-Hover.webp);
+.contents__card:nth-child(3):hover {
+    background-image: url(../images/DC-Hover.webp);
 }
 
-.contents__card:nth-child(4):hover{
+.contents__card:nth-child(4):hover {
     background-image: url(../images/WB-Hover.webp);
 }
 
-.contents__card:nth-child(5):hover{
-    background-image:url(../images/CN-Hover.png) ;
+.contents__card:nth-child(5):hover {
+    background-image: url(../images/CN-Hover.png);
 
 }
 
-.contents__card:nth-child(6):hover{
+.contents__card:nth-child(6):hover {
 
-    background-image:url(../images/UCL-Hover.webp);
+    background-image: url(../images/UCL-Hover.webp);
 }
 
 
@@ -316,39 +315,51 @@
 
 @media screen and (min-width:1140px) {
 
-    .subscription__plans{
+    .subscription__plans {
         flex-direction: row;
         align-items: stretch;
         justify-content: space-around;
-        gap:80px;
-    
+        gap: 80px;
 
+        perspective: 2000px;
+        perspective-origin: top;
     }
 
-    .subscription__card{
+    .subscription__card {
         flex: 1;
         max-width: none;
-        min-height:600px;
+        min-height: 600px;
         padding: 40px 60px;
+
+        transition: transform 1s ease-in-out;
     }
 
 
-    .subscription__plan{
+    .subscription__plan {
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
 
     }
 
-    .contents__container{
+    .subscription__plans:has(> .subscription__card:first-child:hover)>.subscription__card:nth-child(2) {
+        transform: rotateY(-45deg);
+    }
 
-        grid-template-columns: repeat(3,1fr);
-        gap: 40px;
-
+    .subscription__plans:has(> .subscription__card:nth-child(2):hover)>.subscription__card:first-child {
+        transform: rotateY(45deg);
     }
 
 
-    
+.contents__container {
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+
+
 }
 
 @media screen and (min-width:1201px) {
