@@ -225,13 +225,55 @@
     border: 2px solid transparent;
     border-radius: 16px;
     scroll-snap-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition:
+        transform 0.8s,
+        background 0.8s,
+        border 1s;
 }
+
+
+.contents__card:hover {
+    transform: scale(1.05);
+    border-color: var(--tertiary-color);
+}
+
+
 
 .contents__image {
     display: block;
     width: 100%;
     object-fit: cover;
+    transition: opacity 2s;
 }
+
+.contents__card:hover .contents__image {
+    opacity: 0;
+
+}
+
+.contents__card:nth-child(1):hover {
+    background-image: url("../images/hbo-hover_0.webp");
+
+}
+
+.contents__card:nth-child(2):hover {
+    background-image: url(../images/MAX-Hover.webp);
+}
+
+.contents__card:nth-child(3):hover{
+    background-image:url(../images/DC-Hover.webp);
+}
+
+.contents__card:nth-child(4):hover{
+    background-image: url(../images/WB-Hover.webp);
+}
+
+
+
+
 
 
 .title {
@@ -263,8 +305,9 @@
     }
 
 }
+
 @media screen and (min-width:1201px) {
-    .contents__container{
+    .contents__container {
         gap: 40px;
     }
 }
