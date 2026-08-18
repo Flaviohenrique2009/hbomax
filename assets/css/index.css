@@ -107,7 +107,8 @@
 }
 
 .container {
-    max-width: 1200px;
+    width: min(100%-48px,1200px);
+    margin-inline: auto;
     text-align: center;
     margin: auto;
     padding: 24px;
@@ -271,8 +272,15 @@
     background-image: url(../images/WB-Hover.webp);
 }
 
+.contents__card:nth-child(5):hover{
+    background-image:url(../images/CN-Hover.png) ;
 
+}
 
+.contents__card:nth-child(6):hover{
+
+    background-image:url(../images/UCL-Hover.webp);
+}
 
 
 
@@ -306,11 +314,50 @@
 
 }
 
+@media screen and (min-width:1140px) {
+
+    .subscription__plans{
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        gap:80px;
+    
+
+    }
+
+    .subscription__card{
+        flex: 1;
+        max-width: none;
+        min-height:600px;
+        padding: 40px 60px;
+    }
+
+
+    .subscription__plan{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+
+    }
+
+    .contents__container{
+
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+
+    }
+
+
+    
+}
+
 @media screen and (min-width:1201px) {
     .contents__container {
         gap: 40px;
     }
 }
+
+
 
 /* .header__button{ */
 /* animation-duration: 2.2s ;
